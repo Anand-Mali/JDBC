@@ -11,9 +11,7 @@ import org.junit.Test;
 import org.mockito.Mockito;
 
 public class CalculatorTest {
-	int i = 3;
-	int j= 4;
-	
+
 	Calculator add;
 	Calculator service = Mockito.mock(Calculator.class);
 
@@ -29,10 +27,10 @@ public class CalculatorTest {
 
 	@Test
 	public void testAjouter() {
-		assertEquals(7,add.ajouter(i, j));
-		when(service.ajouter(4, 8)).thenReturn(5);
-		assertEquals(5, service.ajouter(4, 8));
-		verify(service, times(1)).ajouter(4, 8);
+		assertEquals("Hello worldev",add.Hello("ev"));
+		when(service.Hello("zrefr")).thenReturn("ergr");
+		assertEquals("ergr", service.Hello("zrefr"));
+		verify(service, times(1)).Hello("zrefr");
 	}
 
 }
