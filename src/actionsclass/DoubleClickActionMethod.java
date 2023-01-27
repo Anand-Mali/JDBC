@@ -18,6 +18,7 @@ public class DoubleClickActionMethod {
 		System.out.println(driver.switchTo().alert().getText());
 		driver.switchTo().alert().accept();
 		Thread.sleep(2000);
+		System.out.println("I am Rushikesh");
 		driver.quit();
 
 	}
