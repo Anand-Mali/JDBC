@@ -12,6 +12,7 @@ public class Demo1 {
 		else {
 			System.out.println("Not Allow");
 		}
+		System.out.println("Anand");
 	}
 
 }
