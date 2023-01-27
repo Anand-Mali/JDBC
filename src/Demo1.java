@@ -6,8 +6,11 @@ public class Demo1 {
 		String name = "Anand";
 		if(name == "Anand") {
 			System.out.println("Allow");
-		}else {
-			System.out.println("Not allow");
+		}else if(name =="Mali") {
+			System.out.println("Request for allow");
+		}
+		else {
+			System.out.println("Not Allow");
 		}
 	}
 
